@@ -27,7 +27,7 @@ class SongsController < ApplicationController
   def new
     if Preference.last.allow_create_songs == true
       @song = Song.new
-      else 
+      else
         redirect_to songs_path
       end
   end
@@ -99,7 +99,7 @@ endclass SongsController < ApplicationController
   def new
     if Preference.last.allow_create_songs == true
       @song = Song.new
-      else 
+      else
         redirect_to songs_path
       end
   end
